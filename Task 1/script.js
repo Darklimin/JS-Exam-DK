@@ -1,4 +1,4 @@
-document.querySelector("form").addEventListener("submit", function (event) {
+document.querySelector("form").addEventListener("submit", (event) => {
   event.preventDefault();
   let myValue = document.querySelector("#search").value;
   document.getElementById("output").innerText =
