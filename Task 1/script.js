@@ -1,3 +1,16 @@
+document.querySelector("form").addEventListener("submit", function (event) {
+  event.preventDefault();
+  let myValue = document.querySelector("#search").value;
+  document.getElementById("output").innerText =
+    "It is: \n" +
+    myValue * 2.2046 +
+    " pounds \n" +
+    myValue * 1000 +
+    " grams or \n" +
+    myValue * 35.274 +
+    " ounces";
+});
+
 /* ------------------------------ TASK 1 ----------------------------
 Parašykite JS kodą, kuris leis vartotojui įvesti svorį kilogramais ir
 pamatyti jo pateikto svorio kovertavimą į:
