@@ -3,11 +3,11 @@ document.querySelector("form").addEventListener("submit", (event) => {
   let myValue = document.querySelector("#search").value;
   document.getElementById("output").innerText =
     "It is: \n" +
-    myValue * 2.2046 +
+    (myValue * 2.2046).toFixed(2) +
     " pounds \n" +
     myValue * 1000 +
     " grams or \n" +
-    myValue * 35.274 +
+    (myValue * 35.274).toFixed(2) +
     " ounces";
 });
 
